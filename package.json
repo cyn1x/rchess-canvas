@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@eslint/css": "^0.4.0",
+    "@eslint/js": "^9.21.0",
+    "eslint": "^9.21.0",
+    "globals": "^16.0.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.0",
+    "typescript-language-server": "^4.3.4",
+    "vscode-langservers-extracted": "^4.10.0"
+  }
+}

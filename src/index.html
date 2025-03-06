@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rchess canvas</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <h1 style="text-align: center;">rchess canvas</h1>
+        <div id="interactive-content">
+            <!-- Height is set dynamically in script -->
+            <canvas id="canvas" width="750" height="750"></canvas>
+            <form>
+                <div class="form-element">
+                    <label for="server-addr">Server address:</label><br>
+                    <input type="text" id="server-addr" name="server-addr" placeholder="localhost:8080"><br>
+                    <p>Status: <span id="server-status">disconnected</span></p>
+                    <button id="connect-btn">
+                        Connect
+                    </button>
+                </div>
+
+                <div class="form-element">
+                    <label for="fen-string">FEN string:</label><br>
+                    <input type="text" id="fen-string" name="fen-string"
+                        placeholder="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1">
+                    <p>Current board state</p>
+                    <button id="send-btn" disabled>
+                        Send
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
